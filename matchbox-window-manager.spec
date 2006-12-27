@@ -12,7 +12,7 @@ Version:	1.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Window Managers
-Source0:	http://projects.o-hand.com/matchbox/sources/matchbox-panel/%{version}/%{name}-%{version}.tar.bz2
+Source0:	http://projects.o-hand.com/matchbox/sources/matchbox-window-manager/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	73881fc9410ef49b1cb9f45af270be69
 URL:		http://projects.o-hand.com/matchbox/
 %{?with_gconf:BuildRequires:	GConf2-devel >= 2.0}
