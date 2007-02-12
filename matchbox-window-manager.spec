@@ -6,7 +6,7 @@
 %bcond_with	sn		# startup-notification support
 #
 Summary:	Matchbox Window Manager
-Summary(pl):	Zarz±dca okien dla ¶rodowiska Matchbox
+Summary(pl.UTF-8):   ZarzÄ…dca okien dla Å›rodowiska Matchbox
 Name:		matchbox-window-manager
 Version:	1.1
 Release:	1
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Matchbox Window Manager.
 
-%description -l pl
-Zarz±dca okien dla ¶rodowiska Matchbox.
+%description -l pl.UTF-8
+ZarzÄ…dca okien dla Å›rodowiska Matchbox.
 
 %prep
 %setup -q
