@@ -1,20 +1,20 @@
 #
 # Conditional build:
-%bcond_with	composite	# composite support (experimental)
-%bcond_with	gconf		# gconf support
-%bcond_with	session		# session manager support
-%bcond_with	sn		# startup-notification support
+%bcond_with	gconf			# gconf support
+%bcond_with	session			# session manager support
+%bcond_with	sn				# startup-notification support
+%bcond_without	composite	# composite support (experimental)
 #
 Summary:	Matchbox Window Manager
 Summary(pl.UTF-8):	Zarządca okien dla środowiska Matchbox
 Name:		matchbox-window-manager
-Version:	1.1
+Version:	1.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Window Managers
-Source0:	http://projects.o-hand.com/matchbox/sources/matchbox-window-manager/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	73881fc9410ef49b1cb9f45af270be69
-URL:		http://projects.o-hand.com/matchbox/
+Source0:	http://matchbox-project.org/sources/matchbox-window-manager/1.2/%{name}-%{version}.tar.bz2
+# Source0-md5:	3e158dcf57823b55c926d95b245500fb
+URL:		http://www.matchbox-project.org/
 %{?with_gconf:BuildRequires:	GConf2-devel >= 2.0}
 BuildRequires:	expat-devel >= 1.95
 BuildRequires:	libmatchbox-devel >= 1.5
