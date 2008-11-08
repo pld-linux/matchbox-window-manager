@@ -1,15 +1,15 @@
 #
 # Conditional build:
-%bcond_with	gconf			# gconf support
-%bcond_with	session			# session manager support
-%bcond_with	sn				# startup-notification support
+%bcond_without	gconf		# gconf support
+%bcond_without	session		# session manager support
+%bcond_without	sn			# startup-notification support
 %bcond_without	composite	# composite support (experimental)
 #
 Summary:	Matchbox Window Manager
 Summary(pl.UTF-8):	Zarządca okien dla środowiska Matchbox
 Name:		matchbox-window-manager
 Version:	1.2
-Release:	1
+Release:	1.1
 License:	GPL v2+
 Group:		X11/Window Managers
 Source0:	http://matchbox-project.org/sources/matchbox-window-manager/1.2/%{name}-%{version}.tar.bz2
@@ -70,6 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/themes/MBOpus/matchbox
 %dir %{_datadir}/themes/blondie
 %{_datadir}/themes/blondie/matchbox
+%dir %{_sysconfdir}/matchbox/
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/matchbox/kbdconfig
 %if %{with gconf}
 %{_sysconfdir}/gconf/schemas/matchbox.schemas
