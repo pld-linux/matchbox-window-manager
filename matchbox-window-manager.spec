@@ -9,7 +9,7 @@ Summary:	Matchbox Window Manager
 Summary(pl.UTF-8):	Zarządca okien dla środowiska Matchbox
 Name:		matchbox-window-manager
 Version:	1.2
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Window Managers
 Source0:	http://matchbox-project.org/sources/matchbox-window-manager/1.2/%{name}-%{version}.tar.bz2
