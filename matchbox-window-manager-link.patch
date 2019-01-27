@@ -1,0 +1,11 @@
+--- matchbox-window-manager-1.2/src/Makefile.am.orig	2019-01-27 18:56:40.388127148 +0100
++++ matchbox-window-manager-1.2/src/Makefile.am	2019-01-27 19:02:08.668123399 +0100
+@@ -20,7 +20,7 @@
+ 
+ matchbox_remote_SOURCES = matchbox-remote.c 
+ 
+-matchbox_window_manager_LDADD = $(LIBMB_LIBS) $(COMPO_LIBS) $(EXPAT_LIBS) $(SN_LIBS) $(GCONF_LIBS) $(XFIXES_LIBS) $(XCURSOR_LIBS)
++matchbox_window_manager_LDADD = $(LIBMB_LIBS) $(COMPO_LIBS) $(EXPAT_LIBS) $(SN_LIBS) $(GCONF_LIBS) $(XFIXES_LIBS) $(XCURSOR_LIBS) -lm
+ 
+ matchbox_window_manager_SOURCES =                        \
+ 		   main.c structs.h wm.c wm.h            \
