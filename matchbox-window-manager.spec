@@ -40,7 +40,7 @@ Zarządca okien dla środowiska Matchbox.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
